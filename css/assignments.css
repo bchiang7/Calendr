@@ -1,0 +1,10 @@
+/* CSS Document */
+#courses-list, #assignments-lists {
+	list-style-type: none;
+	padding: 0px;
+}
+
+.emptyFields {
+	display: none;
+	color: red;
+}

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+#activeTasks li, #removedTasks li{
+	list-style-type: none;
+	margin: 20px;
+}
+
+#activeTasks, #removedTasks {
+	padding: 0px;
+}
+
+#removedTasks {
+	text-decoration: line-through;
+}
+
+#addTask {
+	float: right;
+	margin-left: 5px;
+}
+
+#addAnother_on {
+	display: none;
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>P6 - Computer Prototype</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <style>
+body {
+	font-size: 20px;
+}
+
+.group p, .group ol, .group li {
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	color:#4B4B4B;
+	margin-bottom: 20px;
+}
+
+h1 {
+	font-weigth: 400%;
+}
+
+.fixed {
+    position: fixed;
+}
+
+/* sidebar */
+.bs-docs-sidebar {
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* all links */
+.bs-docs-sidebar .nav>li>a {
+    color: #999;
+    border-left: 2px solid transparent;
+    padding: 4px 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* nested links */
+.bs-docs-sidebar .nav .nav>li>a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 14px;
+}
+
+/* active & hover links */
+.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>li>a:hover, 
+.bs-docs-sidebar .nav>li>a:focus {
+    color: #000000;                 
+    text-decoration: none;          
+    background-color: transparent;  
+    border-left-color: #000000; 
+}
+/* all active links */
+.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>.active:hover>a,
+.bs-docs-sidebar .nav>.active:focus>a {
+    font-weight: 700;
+}
+/* nested active links */
+.bs-docs-sidebar .nav .nav>.active>a, 
+.bs-docs-sidebar .nav .nav>.active:hover>a,
+.bs-docs-sidebar .nav .nav>.active:focus>a {
+    font-weight: 500;
+}
+
+/* hide inactive nested list */
+.bs-docs-sidebar .nav ul.nav {
+    display: none;           
+}
+/* show active nested list */
+.bs-docs-sidebar .nav>.active>ul.nav {
+    display: block;           
+}</style>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <div class="row">
+            <!--Nav Bar -->
+            <nav class="col-xs-3 bs-docs-sidebar">
+                <ul id="sidebar" class="nav nav-stacked fixed">
+                    <li>
+                        <a href="#Intro">Introduction to Prototype</a>
+                        <ul class="nav nav-stacked">
+                        	<li><a href="#Instructions">Startup Instructions</a></li>
+                            <li><a href="#Briefing">Prototype Briefing</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#Tasks">Tasks</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--Main Content -->
+            <div class="col-xs-6">
+            	<h1>Calendr Student Planner</h1>
+                <h4>By Logan Wells, Taylor Vonk, and Brittany Chiang</h4>
+                <section id="Intro" class="group">
+                    <h2>Introduction to Prototype</h2>
+                    <p>If you have reached this page that means that you are going to be testing our prototype for our student and event planner, Calendr. Before you access the prototype, you should know that not all functionality has been implemented. There is no persistent data. There may be inconsistencies among components on different pages. The purpose of this prototype is to test the basic usability of the site before we move on to a completely finished product. Your feedback is invaluable for this process, so don't hesitate to contact any of us regarding a certain feature or bit of functionality.</p>
+                    <div id="Instructions" class="subgroup">
+                        <h2>Startup Instructions</h2>
+                        <p>Our computer prototype for Calendr is hosted on the web, so you can run it in your browser. It has been tested to work in Google Chrome and Firefox so we recommend you use one of those browsers for now. Here is a  
+                    <a href="CALENDR PROTOTYPE LINK GOES HERE" target="_blank">link to the prototype</a>. We recommend you keep this page open in a separate tab or window while you are using the prototype so that you can refer back to the briefing or tasks if need be.</p>
+                    </div>
+                    <div id="Briefing" class="subgroup">
+                        <h2>Prototype Briefing</h2>
+                        <p>The following is the briefing from the original paper prototype for Calendr.</p>
+                        <p>We are in the process of designing a brand-new calendar and scheduling web application, with an additional focus on school courses and assignments. You can interact with it much like you would interact with calendar programs you may have used in the past.</p>
+                        <p>We are conducting a study to see how people interact with this new web application, which is currently called Calendr. This is for a course we are taking at Northeastern called Human-Computer Interaction with Professor Sprague in the College of Computer and Information Science. Your participation is voluntary and you can stop at any time and ask that your data not be used. The total study should take about 10 to 15 minutes. Do you understand and agree to participate in this study?</p>
+                        <p>The purpose of today’s session is for you to help us figure out how to make Calendr’s interface more user-friendly and intuitive before we finish developing. Since we have not yet produced a finished product on the computer, we have created paper versions of Calendr’s interface. You can interact with this paper prototype just as you would a computer, and Logan will act as our computer and simulate interactive components.</p>
+                        <p>We will present you with three different tasks to complete, and your goal is to try to complete them using the interface, while speaking aloud any questions, comments, or concerns (if something is confusing or doesn’t make sense, tell us!) While you do this, the other members of the team will be watching and quietly taking notes.</p>
+                        <p>The prototype is still being developed, so there are some rough edges. You may find that components are missing or incomplete. We want to get some feedback about how well the design works before we start working on a finished product.</p>
+                        <p>As I mentioned, Logan will be playing the role of the computer. He won’t be able to talk- and cannot explain anything. If you want to do something, you’ll need to interact with the prototype. Use your finger to click on buttons. If you need to write something, you can use this pencil as your keyboard. It is perfectly fine to write on the prototype.</p>
+                        <p>Please tell us what makes sense to you, what’s confusing, and any questions that come to your mind. Your questions are especially valuable, but I might not answer them right away, as our goal is to change the interface so it answers them.</p>
+                        <p>Remember that we’re testing the interface- we’re not testing you. Are you ready to begin?</p>
+                        <div class="divider"></div>
+                        <p>To see more of the previous project steps, you can visit <a href="http://www.ccs.neu.edu/home/bchiang7/project.html">this link</a>.</p>
+                    </div>
+                </section>
+                <section id="Tasks" class="group">
+                    <h2>Tasks</h2>
+                    <p>Here are the tasks we would like you to complete:</p>
+                    <ol>
+                    	<li>Add an event to your calendar that takes place this month on the 23rd.</li>
+                        <li>You’ve just finished the grocery shopping task, so you are ready to cross that off. You now have a new task that you need to add.<br>
+                        <h5>Note that for this you will need to go to the Tasks page on Calendr to see actual functionality.</h5></li>
+                        <li>Add a new assignment for the IS4300 Human-Computer Interaction.</li>
+                    </ol>
+
+
+                </section>
+                </div>
+        </div>
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script>
+	$('body').scrollspy({
+    target: '.bs-docs-sidebar',
+    offset: 40
+});
+</script>
+
+</body>
+
+</html>
